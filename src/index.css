@@ -1,0 +1,183 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #f5f2ed;
+}
+
+.app {
+  min-height: 100vh;
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.app-header {
+  margin-bottom: 1.5rem;
+}
+
+.app-header h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.app-tagline {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.app-main {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.editor-label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.editor-input {
+  width: 100%;
+  padding: 0.75rem;
+  font: inherit;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.editor-input:focus {
+  outline: none;
+  border-color: #2d6a9f;
+  box-shadow: 0 0 0 2px rgba(45, 106, 159, 0.2);
+}
+
+.editor-rules {
+  margin-top: 0.75rem;
+}
+
+.editor-rules-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 0.35rem;
+}
+
+.editor-rules-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
+.editor-rule-check {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8125rem;
+  cursor: pointer;
+}
+
+.editor-rule-check input {
+  margin: 0;
+}
+
+.editor-preview {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #fafafa;
+  border-radius: 6px;
+  border: 1px solid #eee;
+}
+
+.editor-preview-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.highlighted-text {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.highlighted-text .segment {
+  border-radius: 2px;
+}
+
+.highlight-segment-wrap {
+  display: inline;
+  white-space: normal;
+}
+
+.highlight-segment-wrap .segment {
+  margin-right: 0.15em;
+}
+
+.highlight-replace-btn,
+.highlight-ignore-btn {
+  display: inline-block;
+  margin-left: 0.25rem;
+  padding: 0.15em 0.4em;
+  font-size: 0.7rem;
+  font-family: inherit;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.highlight-replace-btn:hover,
+.highlight-ignore-btn:hover {
+  background: #f0f0f0;
+  border-color: #999;
+}
+
+.highlight-ignore-btn {
+  margin-left: 0.15rem;
+  color: #666;
+}
+
+.highlight-grammar {
+  background: rgba(220, 160, 50, 0.35);
+  border-bottom: 2px solid #c49a2e;
+  cursor: help;
+}
+
+.highlight-spelling {
+  background: rgba(200, 80, 80, 0.3);
+  border-bottom: 2px solid #b84d4d;
+  cursor: help;
+}
+
+.highlight-word-choice {
+  background: rgba(80, 120, 180, 0.3);
+  border-bottom: 2px solid #5078b4;
+  cursor: help;
+}
+
+.editor-summary {
+  margin: 0.75rem 0 0 0;
+  font-size: 0.8125rem;
+  color: #555;
+}
+
+.editor-summary-grammar { color: #a67c00; }
+.editor-summary-spelling { color: #b84d4d; }
+.editor-summary-word-choice { color: #5078b4; }

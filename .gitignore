@@ -1,0 +1,43 @@
+# Ignore all Markdown files except README.md
+*.md
+!README.md
+!**/README.md
+
+# Build / intermediates
+dist/
+release/
+out/
+*.tsbuildinfo
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Dependencies
+node_modules/
+
+# Logs and caches
+*.log
+npm-debug.log*
+.npm
+.cache/
+.turbo/
+.eslintcache
+*.cache
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Env (optional)
+.env
+.env.local
+.env.*.local
