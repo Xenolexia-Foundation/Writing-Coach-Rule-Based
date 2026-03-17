@@ -18,6 +18,7 @@
     "mobile:ios": "cd mobile && npx expo start --ios"
   },
   "dependencies": {
+    "@xenolexia/dict": "file:../packages/xenolexia-dict",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },

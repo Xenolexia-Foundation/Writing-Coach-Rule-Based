@@ -15,9 +15,9 @@ import { commaBeforeAnd } from "./commaBeforeAnd";
 import { longSentence } from "./longSentence";
 import { passiveVoice } from "./passiveVoice";
 import { createWordChoiceRule } from "./wordChoice";
+import { WORD_CHOICE_MAP } from "@xenolexia/dict";
 
 import dictRaw from "@/data/dict-en.txt?raw";
-import wordChoiceMap from "@/data/word-choice.json";
 
 const dictionary = new Set(
   dictRaw
@@ -27,7 +27,7 @@ const dictionary = new Set(
 );
 
 const spelling = createSpellingRule(dictionary);
-const wordChoice = createWordChoiceRule(wordChoiceMap as Record<string, string>);
+const wordChoice = createWordChoiceRule(WORD_CHOICE_MAP);
 
 export const rules: Rule[] = [
   doubleSpace,
