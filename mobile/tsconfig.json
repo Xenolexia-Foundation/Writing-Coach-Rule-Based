@@ -4,7 +4,6 @@
     "strict": true,
     "resolveJsonModule": true,
     "noEmit": true,
-    "baseUrl": ".",
     "paths": {
       "../../src/*": ["../src/*"]
     }
